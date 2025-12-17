@@ -159,42 +159,39 @@ footer img{width:26px;height:26px}
   .links.show{display:flex}
   .hamburger{display:flex}
 }
-
-/* FLOATING WHATSAPP BUTTON */
-.whatsapp-float{
-  position:fixed;
-  bottom:22px;
-  right:22px;
-  width:56px;
-  height:56px;
-  background:#25D366;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow:0 8px 24px rgba(0,0,0,.25);
-  z-index:9999;
-  transition:.25s;
+/* Premium Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.whatsapp-float:hover{
-  transform:scale(1.08);
+.whatsapp-float:hover {
+  transform: scale(1.15) rotate(-3deg);
+  box-shadow: 0 16px 36px rgba(0,0,0,0.45);
 }
 
-.whatsapp-float img{
-  width:30px;
-  height:30px;
+.whatsapp-float svg {
+  width: 28px;
+  height: 28px;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
 }
-
 </style>
+
 </head>
-<a
-  href="https://wa.me/919586490706"
-  class="whatsapp-float"
-  target="_blank"
-  aria-label="Chat on WhatsApp"
->
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+<a href="https://wa.me/919586490706" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
 </a>
 
 <body>
